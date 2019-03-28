@@ -13,3 +13,5 @@ FUNCIONES
 
 ATRIBUTOS
 {include file="header.tpl" attrib_name="attrib value"}
+
+se puede editar directamente desde github!!!
