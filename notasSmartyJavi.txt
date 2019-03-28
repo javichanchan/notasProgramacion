@@ -1,0 +1,15 @@
+COMENTARIOS
+{*mi comentario*}
+
+VARIABLES
+{$miVariable}
+{#miArchivo#}
+
+FUNCIONES
+{include file="header.tpl"}
+{if $loQueSea}
+{else}
+{/if}
+
+ATRIBUTOS
+{include file="header.tpl" attrib_name="attrib value"}
