@@ -17,3 +17,13 @@ ATRIBUTOS
 PROPIEDADES DE LOS OBJETOS
 Accedemos con una flechita.
 {$persona->nombre};
+
+EJEMPLO FOREACH
+{foreach name=outer item=contact from=$resultadoConsulta}
+    <hr />
+    {foreach key=key item=item from=$contact}
+        {$key}:{$item}<br />
+    {/foreach}
+{/foreach}
+
+
