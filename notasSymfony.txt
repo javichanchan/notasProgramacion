@@ -1,0 +1,72 @@
+Mi versión de Pearl es PEAR - 1.10.1
+No se puede actualizar por consola.
+
+php version 7.3.2
+
+CREAR UN PROYECTO SYMFONY4
+composer create-project symfony/website-skeleton my-project
+
+ARRANCAR EL SERVIDOR
+cd my-project
+php bin/console server:run
+
+DENTRO DE UN PROYECTO SYMFONY4
+DIR bin  //archivos ejecutables, yo creo que no hace falta tocarlo para nada
+DIR config
+		DIR packages
+		DIR routes
+			DIR dev
+			annotations.yaml	//aqui se indican las rutas
+		bootstrap.php
+		bundles.php 	//los bundles son como pluggins
+						//se especifica si el bundle está en producción o en desarrollo (o ambos)
+		routes.yaml
+		services.yaml
+DIR public	//todo lo que antes estaba en la carpeta 'web'
+			//la publicidad se guarda aquí también
+DIR src  //aqui vamos a tener todo el php
+	DIR Controler	//cuando se instala está vacia
+		.gitignore
+	DIR Entity
+	DIR Migrations
+	DIR Repository
+	kernel.php
+DIR templates	//antes las templates podian estar en 'resources', 'view', etc
+				//aquí me crea la vista de los controladores que creamos
+				//el fichero .html.twig es nuestra vista
+DIR tests
+DIR translations
+DIR var  //se guardan ficheros creados automáticamente
+DIR vendor
+.env	//para configurar los parámetros, BBDD y demás
+		//en APP_ENV=  le indicamos si estamos en desarrollo o en producción
+.env.test
+.gitignore
+composer.json
+composer.lock
+phpunit.xml.dist
+symfony.lock
+
+
+CREAR UN CONTROLADOR POR COMANDOS
+Dentro del proyecto:
+php bin/console make:controller
+//cuando lo está creando te pide que le des el nombre
+Al mismo tiempo en templates me va a crear una vista.
+
+CREAR UN CONTROLADOR EN PLAN MANUAL
+En el directorio src/Controller creamos el fichero php.
+
+En config\routes.yaml creamos el nombre de la aplicación, la routa que va a tener el navegador y el controlador.
+
+Tambien puede ir la ruta en el mismo fichero. A modo de anotación. Symfony la ejecuta igual.
+
+VARIABLES EN SYMFONY: Van estre dobles corchetes. {{}}
+
+RUTAS
+@Route("/blog/{page}", name="blog_list", requirements={"page"="\d+"})  //para que lo que entre sea un número entero
+
+
+
+YOUTUBE App con Symfony 3: Video 06 MVC.
+
