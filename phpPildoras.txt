@@ -1,0 +1,23 @@
+PHP Pildoras.
+
+strcmp : string compare, 1 si no son iguales y 0 si son iguales
+	ej: if(strcmp("Suma",$operacion)){......}
+
+strcasecmp : igual, pero ignora mayusculas/minusculas
+declarar constantes:  define("NOMBRE_CONSTANTE", valor);
+números aleatorios: rand()  o  rand($minimo, $maximo);
+casting explicito:  $resultado=(int)$num1;
+
+BUCLES FOR. Dentro pueden tener break;(interrumpe el bucle)
+			o pueden tener continue; (interrumpe el código del bucle, pero vuelve a entrar en la siguiente vuelta)
+
+USAR UN CAMPO ESTÁTICO DE UNA CLASE
+en lugar de  this->  usamos  self::
+
+ARRAYS
+is_array($loQueSea) es una funcion que comprueba si lo que le pasamos es un array
+count($miArray) devuelve el número de posiciones del array. Útil para bucles for.
+var_dump($miArray) para imprimir el array en plan molón. Da igual que tenga varias dimensiones.
+
+
+Video 35.
