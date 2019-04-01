@@ -32,8 +32,9 @@ DIR src  //aqui vamos a tener todo el php
 	DIR Repository
 	kernel.php
 DIR templates	//antes las templates podian estar en 'resources', 'view', etc
-				//aquí me crea la vista de los controladores que creamos
-				//el fichero .html.twig es nuestra vista
+		//aquí me crea la vista de los controladores que creamos
+		//el fichero .html.twig es nuestra vista
+		//base.html.twig es el esqueleto base de todas las vistas
 DIR tests
 DIR translations
 DIR var  //se guardan ficheros creados automáticamente
@@ -66,7 +67,16 @@ VARIABLES EN SYMFONY: Van estre dobles corchetes. {{}}
 RUTAS
 @Route("/blog/{page}", name="blog_list", requirements={"page"="\d+"})  //para que lo que entre sea un número entero
 
+INCLUIR HOJAS DE ESTILOS Y DEMAS EN NUESTRA VISTA
+{% extends 'base.html.twig' %}
+
+PLANTILLAS DE BOOTSTRAP GRATUITAS
+https://startbootstrap.com
+Las carpetas 'vendor' y 'css' de la plantilla las copio dentro de la carpeta 'public' del proyecto.
+La parte de estilos de la plantilla la copiamos del codigo fuente y le lo ponemos a nuestra base.html.twig 
+	con un pequeño cambio en la sintaxis.
+Tambien la parte del javascript (abajo en el código fuente).
 
 
-YOUTUBE App con Symfony 3: Video 06 MVC.
+YOUTUBE App con Symfony 3: Video 12 o así.
 
