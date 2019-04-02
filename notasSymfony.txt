@@ -76,7 +76,9 @@ Las carpetas 'vendor' y 'css' de la plantilla las copio dentro de la carpeta 'pu
 La parte de estilos de la plantilla la copiamos del codigo fuente y le lo ponemos a nuestra base.html.twig 
 	con un pequeño cambio en la sintaxis.
 Tambien la parte del javascript (abajo en el código fuente).
+El código fuente de las diferentes partes de la plantilla lo cojemos del 'index.html' de la plantilla y las vamos
+copiando en base.html.twig
 
 
-YOUTUBE App con Symfony 3: Video 12 o así.
+YOUTUBE App con Symfony 3: Video 13 o así.
 
