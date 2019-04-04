@@ -27,3 +27,6 @@ EJEMPLO FOREACH
 {/foreach}
 
 
+Smarty require cuatro directorios (por defaul) llamados 'templates/', 'templates_c/',
+'configs/' y 'cache/'. (a mi me faltan configs y cache)
+
