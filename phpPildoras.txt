@@ -20,4 +20,4 @@ count($miArray) devuelve el número de posiciones del array. Útil para bucles f
 var_dump($miArray) para imprimir el array en plan molón. Da igual que tenga varias dimensiones.
 
 
-Video 36.
+Video 39.
