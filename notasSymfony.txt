@@ -88,6 +88,8 @@ Para formulario chulo:
 	En config\packages\twig.yaml al twig le añadimos la linea 
 	form_themes: ['bootstrap_4_horizontal_layout.html.twig']
 	y listo.
+	
+Posicionamiento SEO. No tengo ni puta idea pero algo tengo que hacer y luego vacilar de ello.
 
 
 YOUTUBE App con Symfony 3: Video 40 o así.
