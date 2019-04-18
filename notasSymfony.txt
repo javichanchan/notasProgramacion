@@ -72,6 +72,7 @@ INCLUIR HOJAS DE ESTILOS Y DEMAS EN NUESTRA VISTA
 
 PLANTILLAS DE BOOTSTRAP GRATUITAS
 https://startbootstrap.com
+https://colorlib.com/wp/free-bootstrap-templates/
 Las carpetas 'vendor' y 'css' de la plantilla las copio dentro de la carpeta 'public' del proyecto.
 La parte de estilos de la plantilla la copiamos del codigo fuente y le lo ponemos a nuestra base.html.twig 
 	con un pequeño cambio en la sintaxis.
