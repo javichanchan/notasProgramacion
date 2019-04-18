@@ -80,6 +80,31 @@ Tambien la parte del javascript (abajo en el código fuente).
 El código fuente de las diferentes partes de la plantilla lo cojemos del 'index.html' de la plantilla y las vamos
 copiando en base.html.twig
 
+RELACION ENTRE BASES DE DATOS
+
+Usuarios-Mensajes
+Usuario: OneToMany
+Mensajes: ManyToOne
+
+Usuarios-Reservas
+Usuario: OneToMany
+Reservas: ManyToOne
+
+Usuarios-Tickets
+Usuarios: OneToMany
+Tickets: ManyToOne
+
+Tickets-LineasTickets
+Tickets: OneToMany
+LineasTickets: ManyToOne
+
+Servicios-LineasTickets
+Servicios: OneToMany
+LineasTickets: ManyToOne
+
+Hay que construir las entitades en un orden concreto. Primero las OneToMany y luego sus respectivos ManyToOne.
+Una vez construidas las entidades no recuerdo bien como pasarselas a la BBDD, pero eso ya sería todo.
+
 DOCUMENTACIÓN
 Utilizamos twig.
 Utilizamos Doctrine para BBDD. Por defecto no está puesto, hay que instalarlo. 
